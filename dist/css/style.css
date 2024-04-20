@@ -542,42 +542,33 @@ main .accordion .accordion__item__header.active + .accordion__item__body {
   max-height: fit-content;
 }
 
-footer {
+.footer {
   background-color: #000;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: absolute;
   width: 100%;
+  padding: 4rem;
+  gap: 2rem;
 }
 
-footer .nav-list {
+.footer__grid {
   display: flex;
   justify-content: center;
-  gap: 2rem;
   flex-direction: column;
-  width: 100%;
-  max-width: 1300px;
-  margin: 0 auto;
+  grid-gap: 2rem;
 }
 
-footer .nav-list a {
-  font-size: 1.6rem;
-  font-weight: 500;
+.footer__col li {
+  margin-top: .8rem;
 }
 
-footer .nav-list a.active {
-  border-bottom: 1px solid #fff;
-}
-
-footer span {
+.footer span {
   width: fit-content;
-  margin-left: 4rem;
   font-size: 1.5rem;
   font-weight: 500;
   color: rgba(224, 255, 255, 0.598) !important;
-  max-width: 1300px;
-  margin: 0 auto;
 }
 
 @media (min-width: 900px) {
@@ -586,6 +577,37 @@ footer span {
   }
   header nav .container img {
     width: 35%;
+  }
+  header nav .container .footer {
+    display: flex;
+    gap: 3rem;
+  }
+  header nav .container .footer__grid {
+    background-color: black;
+    margin-bottom: 5rem;
+  }
+  header nav .container .footer__col span {
+    font-weight: 700;
+  }
+  header nav .container .footer__col li {
+    margin-top: 1.4rem;
+  }
+  header nav .container .footer__col a {
+    color: #a4a5a7;
+    font-size: 1.4rem;
+  }
+  header nav .container .footer .nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+  }
+  header nav .container .footer .nav-list a {
+    font-size: 1.3rem;
+    color: #a4a5a7;
+  }
+  header nav .container .footer span {
+    text-align: center;
+    width: auto;
   }
   header .cta__btn-btn1, header nav .cta__btn-btn2 {
     display: block !important;
@@ -689,18 +711,13 @@ footer span {
   .flexibility .flexibility__device:nth-child(3) .row-cols-1 {
     margin: 0 4rem;
   }
-  .footer {
-    height: 80vh;
-    display: flex;
-    gap: 3rem;
-  }
   .footer__grid {
     background-color: black;
     display: flex;
-    align-items: start;
-    justify-content: center;
+    flex-direction: row;
     grid-gap: 10rem;
-    margin-bottom: 5rem;
+    width: fit-content;
+    padding: 3rem;
   }
   .footer__col span {
     font-weight: 700;
@@ -721,8 +738,8 @@ footer span {
     font-size: 1.3rem;
     color: #a4a5a7;
   }
-  .footer span {
-    text-align: center;
+  .footer .copyright {
+    padding-left: 3rem;
     width: auto;
   }
 }
