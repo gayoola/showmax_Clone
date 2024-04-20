@@ -1,0 +1,21 @@
+@import '../utils/fonts';
+
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+    text-rendering: optimizeLegibility;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+.logo {
+    width: 200px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $font;
+}

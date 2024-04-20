@@ -1,0 +1,107 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+a, a:visited, a:active {
+    text-decoration: none;
+    color: #fff;
+}
+
+li {
+    list-style-type: none;
+}
+
+button {
+    cursor: pointer;
+    outline: 0;
+}
+
+.container {
+    max-width: 100%;
+    width: 125.5rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 1rem 0;
+    line-height: 1.25;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flexSpace($space) {
+    display: flex;
+    align-items: center;
+    justify-content: $space;
+}
+
+@mixin font-weight($weight) {
+    $weights: (
+      thin: 100,
+      extra-light: 200,
+      ultra-light: 200,
+      light: 300,
+      normal: 400,
+      book: 400,
+      regular: 400,
+      medium: 500,
+      semi-bold: 600,
+      demi-bold: 600,
+      bold: 700,
+      extra-bold: 800,
+      ultra-bold: 900,
+      heavy: 900,
+      black: 900,
+      ultra: 900,
+      ultra-black: 900,
+      extra-ultra: 900
+    );
+
+    $output: $weight;
+    @if map-has-key($weights, $weight) {
+    $output: map-get($weights, $weight);
+    }
+  
+    font-weight: $output;
+}
+
+
+@mixin btn-features {
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    @include font-weight((bold));
+}
+
+@mixin btn-features-2 {
+    height: 50px;
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 1rem 3rem;
+    transition: .3s all ease-in-out;
+    border-radius: 50px;
+}
+
+p {
+    font-size: 1.6rem;
+    width: 80%;
+    @include font-weight(medium);
+}

@@ -1,0 +1,337 @@
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  text-rendering: optimizeLegibility;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+.logo {
+  width: 200px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+a, a:visited, a:active {
+  text-decoration: none;
+  color: #fff;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+  outline: 0;
+}
+
+.container {
+  max-width: 100%;
+  width: 125.5rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1rem 0;
+  line-height: 1.25;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.6rem;
+  width: 80%;
+  font-weight: 500;
+}
+
+header nav {
+  height: 70px;
+}
+
+header nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+
+header nav .container img {
+  margin-top: 2.5rem;
+  width: 400px;
+}
+
+body {
+  background: rgba(0, 0, 0, 0.8) url("https://showmax.akamaized.net/i/cd528873-72dc-402a-886f-992136840b81/1360x/q=30");
+  background-blend-mode: darken;
+}
+
+main {
+  max-width: 700px;
+  width: 100%;
+  margin: auto;
+}
+
+main .wrapper {
+  margin-top: 6rem;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+}
+
+main .wrapper .wrapper__header {
+  width: 50%;
+  padding: 1.5rem 2rem;
+}
+
+main .wrapper .wrapper__header__h1 {
+  margin-top: 2rem;
+  line-height: 2.4;
+  font-size: 1.6rem;
+}
+
+main .wrapper .wrapper__content {
+  font-size: 1.6rem;
+}
+
+main .wrapper .wrapper__content__checklist li {
+  font-size: 1.4rem;
+  line-height: 2.5;
+  margin: 0 -4rem;
+  font-weight: 500;
+}
+
+main .wrapper .wrapper__content__checklist img {
+  width: 15px;
+}
+
+main .wrapper .tab-form {
+  width: 50%;
+  background-color: #dce0e3;
+  overflow: hidden;
+}
+
+main .wrapper .tab-form .tab-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  width: 100%;
+}
+
+main .wrapper .tab-form .tab-header > div:nth-last-child(2) {
+  margin-right: 4rem;
+}
+
+main .wrapper .tab-form .tab-header > div {
+  padding: 0 2rem;
+  width: 371px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-align: center;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main .wrapper .tab-form .tab-header > div.active {
+  background-color: #dce0e3;
+  width: 390px;
+  font-weight: 700;
+}
+
+main .wrapper .tab-form .tab-body {
+  padding: 20px;
+}
+
+main .wrapper .tab-form .tab-body > div.active {
+  display: none;
+}
+
+main .wrapper .tab-form .tab-body > .div {
+  display: block;
+}
+
+main .wrapper .tab-form .tab-body .signup .form-input h2, main .wrapper .tab-form .tab-body .signin .form-input h2 {
+  display: inline-block;
+  font-size: 1.4rem;
+  margin-bottom: 1.6rem;
+}
+
+main .wrapper .tab-form .tab-body .signup .form-input label, main .wrapper .tab-form .tab-body .signin .form-input label {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+main .wrapper .tab-form .tab-body .signup .form-input [type="tel"], main .wrapper .tab-form .tab-body .signin .form-input [type="tel"] {
+  padding-left: 5rem;
+}
+
+main .wrapper .tab-form .tab-body .signup .form-input span, main .wrapper .tab-form .tab-body .signin .form-input span {
+  display: inline-block;
+  font-size: 1.4rem;
+}
+
+main .wrapper .tab-form .tab-body .signup .form-input input, main .wrapper .tab-form .tab-body .signin .form-input input {
+  margin-bottom: 2rem;
+  width: 310px;
+  max-width: 100%;
+  padding: 1.6rem;
+  border: none;
+  outline: none;
+}
+
+main .wrapper .tab-form .tab-body .signup .form-input input:focus, main .wrapper .tab-form .tab-body .signin .form-input input:focus {
+  border: 1px solid #0069b1;
+}
+
+main .wrapper .tab-form .tab-body .signup .form-input button, main .wrapper .tab-form .tab-body .signin .form-input button {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: 700;
+  height: 50px;
+  font-size: 1.6rem;
+  color: #fff;
+  padding: 1rem 3rem;
+  transition: .3s all ease-in-out;
+  border-radius: 50px;
+  background-color: #e83d8e;
+  font-size: 1.7rem;
+  width: 100%;
+}
+
+main .wrapper .tab-form .tab-body .signup .checkbox, main .wrapper .tab-form .tab-body .signin .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+main .wrapper .tab-form .tab-body .signup .checkbox input[type=checkbox], main .wrapper .tab-form .tab-body .signin .checkbox input[type=checkbox] {
+  margin: 4px 0 0;
+  line-height: normal;
+  width: 20px;
+  height: 20px;
+}
+
+main .wrapper .tab-form .tab-body .signup .checkbox label, main .wrapper .tab-form .tab-body .signin .checkbox label {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+main .wrapper .tab-form .tab-body .signup small, main .wrapper .tab-form .tab-body .signin small {
+  font-size: 1rem;
+}
+
+main .wrapper .tab-form .tab-body .signup small a, main .wrapper .tab-form .tab-body .signin small a {
+  color: #0069b1;
+}
+
+main .wrapper .tab-form .tab-body .signin .form-input:nth-last-of-type(2) .btn, main .wrapper .tab-form .tab-body .signin div .btn {
+  margin-bottom: 2rem;
+}
+
+main .wrapper .tab-form .tab-body .signin .query {
+  font-size: 1.4rem;
+}
+
+main .wrapper .tab-form .tab-body .signin .query .img-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+main .wrapper .tab-form .tab-body .signin .query .img-content img {
+  width: 20px;
+}
+
+main .wrapper .tab-form .tab-body .signin .query .img-content span {
+  color: #0069b1;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  position: absolute;
+  bottom: 5%;
+  transform: translate(2%);
+}
+
+footer body {
+  min-width: 55vh;
+}
+
+footer small {
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 360px) {
+  footer {
+    -top: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  main .wrapper {
+    flex-direction: column !important;
+    width: 95%;
+    margin-top: 0;
+    margin: auto;
+  }
+  .wrapper__header {
+    width: 100% !important;
+  }
+  .wrapper__header____h1 {
+    line-height: 1.5 !important;
+  }
+  .wrapper__content__checklist li {
+    width: 300px;
+    font-size: 1.4rem !important;
+  }
+  .wrapper__content__checklist li {
+    width: 300px;
+    font-size: 1.4rem !important;
+  }
+}
+
+.tab-form {
+  width: 100% !important;
+}
+
+.tab-form .tab-header > div {
+  font-size: 1.1rem !important;
+}
+/*# sourceMappingURL=signup.css.map */

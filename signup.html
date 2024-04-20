@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./dist/css/style.css"> -->
+    <link rel="stylesheet" href="./dist/css/signup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.1.5/css/intlTelInput.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.1.5/js/intlTelInput.min.js" integrity="sha512-76ZEyqfk9yqzaDYdBmDR5Br0eCL3/bs0Q9sH2MKJweRHkr7RSXKhX1/eupqqwJL5IhyuQfCgFSIixbwLz3aC2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+    <title>Home | Showmax</title>
+</head>
+<body>
+    <header id="header">
+        <nav class="nav">
+            <div class="container">
+                <img src="./scss/image/svg/logo.svg" alt="logo">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="wrapper">
+            <section class="wrapper__header">
+                <h1 class="wrapper__header__h1">Sign up and start enjoying Showmax.</h1>
+
+                <div class="wrapper__content">
+                    <ul class="wrapper__content__checklist">
+                        <li class="wrapper__content__item"><img src="./scss/image/svg/check.svg" alt="check">Cancel at any time YOU want.</li>
+                        <li class="wrapper__content__item"><img src="./scss/image/svg/check.svg" alt="check">Change plans at any time.</li>
+                        <li class="wrapper__content__item"><img src="./scss/image/svg/check.svg" alt="check">Only a few steps ahead to watch.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <div class="tab-form">
+                <div class="tab-header">
+                    <div class="active">Create account</div>
+                    <div>Sign in</div>
+                </div>
+
+                <div class="tab-body">
+                    <div class="signup active">
+                        <div class="form-input">
+                            <h2 for="email">Email</h2>
+                            <input type="text" name="email" id="email">
+                        </div>
+
+                        <div class="form-input">
+                            <h2 for="psw">Password</h2> <span>(enter at least 6 characters)</span>
+                            <input type="password" name="psw" id="psw">
+                        </div>
+
+                        <div class="checkbox">
+                            <input type="checkbox" id="show_psw">
+                            <label for="show__psw">Show Password</label>
+                        </div>
+
+                        <br>
+                        <div class="form-input">
+                           <label for="phone">Phone</label>
+                           <span>(Optional)</span><br><br>
+                           <input type="tel" name="phone" id="phone">
+                           <!-- <span id="valid-msg" class="hide" style="color:green">valid</span>
+                           <span id="error-msg" class="hide" style="color:red"></span> -->
+                        </div> <br><br>
+
+                        
+
+                        <small>By clicking <i>Create new account,</i> you have read, understood and agree to be bound by the
+                            <a href="https://www.showmax.com/service-terms" target="_blank" data-link-id="mainTermsConditions@signup">Service Terms and Conditions</a>, <a href="https://www.showmax.com/privacy-policy" target="_blank" data-link-id="mainPrivacyPolicy@signup">Privacy Policy</a> and <a href="https://www.showmax.com/licence-agreement" target="_blank" data-link-id="licenseAgreement@signup">Licence Agreement</a>.
+                        </small> <br><br>
+
+                        <div class="form-input">
+                            <button class="btn">Create new account</button>
+                        </div>
+                    </div>
+
+                    <div class="signin">
+                        <div class="form-input">
+                            <h2 for="email">Email</h2>
+                            <input type="text" name="email" id="email">
+                        </div>
+
+                        <div class="form-input">
+                            <h2 for="psw">Password</h2> <span>(enter at least 6 characters)</span>
+                            <input type="password" name="psw" id="psw">
+                        </div>
+
+                        <div class="checkbox">
+                            <input type="checkbox" id="show_psw">
+                            <label for="show__psw">Forgot Password</label>
+                        </div>
+
+                        <div class="form-input">
+                            <button class="btn">Sign in</button>
+                            <span>Forgot Password?</span>
+                        </div> <br>
+
+                        <hr> <br>
+
+                        <div class="query">
+                            <span>We removed Facebook login.
+                                Having problems logging in?
+                            </span> <br><br> 
+
+                            <div class="img-content">
+                                <img src="./scss/image/svg/chatbubble.svg" alt="chatbubble"> <span>Chat to us</span>
+                            </div>
+                        </div>          
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <small>Terms & Conditions</small>
+        <small>&copy; Showmax. All rights reserved</small>
+        <small>Cookies</small>
+    </footer>
+    <script src="./JS/signup.js"></script>
+</body>
+</html>
+
+
